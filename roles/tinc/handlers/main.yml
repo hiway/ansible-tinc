@@ -1,11 +1,11 @@
 ---
 
 - name: restart tinc
-  service: >
-    name=tinc
-    state=restarted
+  service:
+    name: tinc
+    state: restarted
 
 - name: reload tinc
-  service: >
-    name=tinc
-    state=reloaded
+  service:
+    name: tinc
+    state: reloaded
