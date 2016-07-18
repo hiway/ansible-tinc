@@ -5,11 +5,11 @@
     name: tinc
     enabled: no
     state: stopped
-    pattern: "tincd -n {{ netname }}"
+    pattern: "tincd -n {{ tinc_netname }}"
 
 - name: delete tinc netname directory
   file:
-    path: "/etc/tinc/{{ netname }}"
+    path: "/etc/tinc/{{ tinc_netname }}"
     state: absent
 
 - name: delete nets.boot

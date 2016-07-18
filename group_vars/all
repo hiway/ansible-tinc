@@ -1,9 +1,9 @@
 ---
 
-netname: nyc3
-physical_ip: "{{ ansible_eth1.ipv4.address }}"
+tinc_netname: nyc3
+tinc_physical_ip: "{{ ansible_eth1.ipv4.address }}"
 
-vpn_interface: tun0
+tinc_vpn_interface: tun0
 
-vpn_netmask: 255.255.255.0
-vpn_subnet_cidr_netmask: 32
+tinc_vpn_netmask: 255.255.255.0
+tinc_vpn_subnet_cidr_netmask: 32
